@@ -1,0 +1,158 @@
+/* Embedded CSS styles */
+/* Add your styles here */
+body {
+    margin: 0;
+    background: lightblue;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.content-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1,
+h2 {
+    color: #333;
+}
+
+p {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+li {
+    text-align: left;
+    /* Align text to the left */
+    margin-bottom: 10px;
+    /* Adjust margin bottom */
+    position: relative;
+    /* Add position relative */
+    padding-left: 20px;
+    /* Add left padding for bullet point */
+}
+
+li::before {
+    content: '\2022';
+    /* Unicode for bullet point */
+    position: absolute;
+    /* Position the bullet point */
+    left: 0;
+    /* Adjust distance of bullet point from left */
+    top: 50%;
+    /* Align bullet point vertically */
+    transform: translateY(-50%);
+    /* Center bullet point vertically */
+}
+
+nav {
+    background-color: #003366;
+    color: #fff;
+    padding: 10px;
+    font-size: larger;
+    font-weight: bold;
+    text-align: left;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 4px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+nav a:hover {
+    color: #007bff;
+    background-color: #fff;
+}
+
+.navigation-buttons {
+    margin-top: 20px;
+    text-align: center;
+    padding-bottom: 24px;
+}
+
+.navigation-buttons a {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 6px;
+    /* Add margin between anchor elements */
+}
+
+.course-materials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.table {
+    flex: 0 1 calc(50% - 10px);
+    margin-bottom: 20px;
+}
+
+.table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f2f2f2;
+}
+
+.media-container {
+    flex: 0 1 48%;
+    margin-bottom: 20px;
+}
+
+.media-container video,
+.media-container audio {
+    width: 100%;
+}
+
+.flex-list-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-list-container ul {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.footer {
+    background-color: #003366;
+    color: #fff;
+    padding: 2px;
+    font-size: medium;
+    font-weight: lighter;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    /* Changed from 1px to 0 to align with the bottom */
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    /* Use flexbox */
+    justify-content: center;
+    /* Align content horizontally to the center */
+    align-items: center;
+    /* Align content vertically to the center */
+    height: 30px;
+}

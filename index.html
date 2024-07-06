@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Learning Platform</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <!-- Font Awesome CDN (for burger icon) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="main-wrapper">
+        <header class="header-nav">
+            <nav class="nav">
+                <ul class="nav-items">
+                    <li class="items"><a href="index.html">Home</a></li>
+                    <li class="items"><a href="../nav/about.html">About</a></li>
+                    <li class="items"><a href="../nav/contact.html">Contact</a></li>
+                    <li class="items"><a href="login.html">Courses</a></li>
+                </ul>
+                <a href="login.html" title="Sign Up Too!!"><p>Login</p></a>
+                <i class="fas fa-bars" id="hamburger"></i>
+            </nav>
+        </header>
+        <main class="hero">
+            <div class="content-one">
+                <h2 class="text-1">Welcome</h2>
+                <h1 class="text-2">To My Free Online Learning Platform</h1>
+                <h2 class="text-3">I am a third-year undergraduate students who love imparting knowledge to others</h2>
+                <a href="login.html" class="learn-more"> Learn More</a>
+            </div>
+            <div class="content-two">
+                <div class="img-container">
+                    <img src="/images/logo.jpg" width="300" height="220" alt=""/>
+                </div>
+            </div>
+        </main>
+        <div class="marquee">
+            <marquee><strong>University of Lay Adventists of Kigali. Faculty of Computing and Information Sciences. Web Technology Continue Assessment Test (CAT). Level Three 2024!</strong></marquee>
+        </div>
+        <section class="products">
+            <div class="products-content-one">
+                <h1 class="text-1">Courses Offer</h1>
+                <a href="login.html" class="learn-more"> Learn More</a>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h1>Introduction to Web Development</h1>
+                    <p>This course provides an introduction to web development, covering HTML, CSS, and JavaScript.</p>
+                    <a href="login.html" class="read-more">READ MORE</a>
+                </div>
+    
+                <div class="card">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h1>Data Science Fundamentals</h1>
+                    <p>This course provides an introduction to data science fundamentals, covering various topics essential for data analysis and interpretation.</p>
+                    <a href="login.html" class="read-more">READ MORE</a>
+                </div>
+    
+                <div class="card">
+                    <i class="fa-solid fa-robot"></i>
+                    <h1>Introduction to Artificial Intelligence</h1>
+                    <p>This course provides an introduction to artificial intelligence, covering basic concepts, algorithms, and applications.</p>
+                    <a href="login.html" class="read-more">READ MORE</a>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <i class="fa-solid fa-shield-alt"></i>
+                    <h1>CyberSecurity Essentials</h1>
+                    <p>This course covers essential concepts and practices in cybersecurity, including threat detection, prevention, and response.</p>
+                    <a href="login.html" class="read-more">READ MORE</a>
+                </div>
+    
+                <div class="card">
+                    <i class="fa-solid fa-cloud"></i>
+                    <h1>Cloud Computing Basics</h1>
+                    <p>This course provides an introduction to cloud computing, covering fundamental concepts, services, and deployment models.</p>
+                    <a href="login.html" class="read-more">READ MORE</a>
+                </div>
+    
+                <div class="card">
+                    <i class="fa-solid fa-brain"></i>
+                    <h1>Machine Learning Fundamentals</h1>
+                    <p>This course provides an introduction to machine learning, covering basic concepts, algorithms, and applications.</p>
+                    <a href="login.html" class="read-more">READ MORE</a>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <p>&copy; 2024 Online Learning Platform. All rights reserved.</p>
+        </footer>
+    </div>
+<script>
+const mediaButton = document.querySelector('#hamburger');
+const navItems = document.querySelector('.nav-items');
+
+mediaButton.addEventListener('click', function () {
+    mediaButton.classList.toggle('fa-bars');
+    mediaButton.classList.toggle('fa-times');
+    navItems.classList.toggle('show-list');
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+body {
+    background: url(../images/bg-1.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+}
+
+nav {
+    background-color: #003366;
+    color: #F0F0F0;
+    padding: 12px;
+    font-size: larger;
+    font-weight: bold;
+    text-align: left;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 4px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+nav a:hover {
+    color: #007bff;
+    background-color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.form-box {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    top: -10px;
+    border: 2px solid rgba(255, 255, 2550.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 32px;
+}
+
+.form-box .input-box {
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+
+}
+
+.form-box .input-box input {
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0 20px 0 5px;
+    color: #fff;
+    font-size: 16px;
+}
+
+i {
+    position: absolute;
+    color: #fff;
+    top: 13px;
+    right: 0;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+.btn {
+    color: #fff;
+    background: blue;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow: 3px 0 10px rgba(0, 0, 0, .5);
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.group span a {
+    color: #fff;
+    position: relative;
+    top: 10px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.group a:focus {
+    text-decoration: underline;
+}
+
+#result {
+    color: red;
+    font-weight: 600;
+    position: relative;
+    top: 25px;
+}
+
+.popup {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform .4s, top .4s;
+    visibility: hidden;
+    text-align: center;
+    padding: 0 30px 30px;
+    height: 330px;
+    color: #000;
+}
+
+.popup ion-icon {
+    color: #00ff00;
+    font-size: 50px;
+}
+
+.popup button {
+    width: 100%;
+    background: #00ff00;
+    padding: 10px 0;
+    margin-top: 50px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, .1);
+}
+
+.popup a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.open-slide {
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    visibility: visible;
+}
+
+.popup h2 {
+    font-weight: 500;
+    font-size: 38px;
+    margin: 30px 0 10px;
+}
+
+.some-element {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    /* For Safari 9+ */
+}
+
+.form-box {
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+.footer {
+    background-color: #003366;
+    color: #F0F0F0;
+    padding: 2px;
+    font-size: medium;
+    font-weight: lighter;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    /* Changed from 1px to 0 to align with the bottom */
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    /* Use flexbox */
+    justify-content: center;
+    /* Align content horizontally to the center */
+    align-items: center;
+    /* Align content vertically to the center */
+    height: 30px;
+}

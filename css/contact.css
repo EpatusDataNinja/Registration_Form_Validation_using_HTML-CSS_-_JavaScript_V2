@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to left bottom, lightblue, lightpink, lightblue);
+}
+
+nav {
+    background-color: #003366;
+    color: #fff;
+    padding: 12px;
+    font-size: larger;
+    font-weight: bold;
+    text-align: left;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 4px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+nav a:hover {
+    color: #007bff;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 500px;
+    margin: 37px auto;
+    padding: 6px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 150px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#successMessage {
+    display: none;
+    color: green;
+    background-color: chartreuse;
+    padding: 10px;
+    border: 1px solid green;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.footer {
+    background-color: #003366;
+    color: #fff;
+    padding: 2px;
+    font-size: medium;
+    font-weight: lighter;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    /* Changed from 1px to 0 to align with the bottom */
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    /* Use flexbox */
+    justify-content: center;
+    /* Align content horizontally to the center */
+    align-items: center;
+    /* Align content vertically to the center */
+    height: 30px;
+}
